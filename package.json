@@ -5,7 +5,7 @@
     "main": "server.js",
     "repository": {
       "type": "git",
-      "url": "https://github.com/ggeils/Social-Network-API"
+      "url": "git+https://github.com/ggeils/Social-Network-API"
     },
     "scripts": {
       "start": "node server.js",
