@@ -1,16 +1,18 @@
-const express = require("express");
-const db = require("./config/connection");
-const routes = require("./routes");
+// Requirements
+const express = require('express');
+const mongoose = require('mongoose');
 
-const PORT = process.env.PORT || 3001;
 const app = express();
+const PORT = process.env.PORT || 3001;
 
-app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(routes);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static('public'));
+app.use(require('./routes'));
 
-db.once("open", () => {
-  app.listen(PORT, () => {
-    console.log("App now listening at http://localhost:3001!");
-  });
-});
+// Connect mongoose
+mongoose.connect('mongodb://localhost:3001');
+
+mongoose.set('debug', true);
+
+app.listen(PORT, () => console.log(`Connected on localhost:${PORT}!`));

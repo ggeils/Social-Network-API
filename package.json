@@ -1,21 +1,21 @@
 {
-    "name": "Social-Network-API",
-    "description": "",
-    "version": "1.0.0",
-    "main": "server.js",
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/ggeils/Social-Network-API"
-    },
-    "scripts": {
-      "start": "node server.js",
-      "seed": "node utils/seed.js"
-    },
-    "dependencies": {
-      "dotenv": "^16.0.0",
-      "express": "^4.17.3",
-      "find-config": "^1.0.0",
-      "moment": "^2.29.1",
-      "mongoose": "^6.2.3"
-    }
+  "name": "social-network-api",
+  "description": "Social network API",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ggeils/social-network-api.git"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node utils/seed.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "find-config": "^1.0.0",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.3"
+  }
 }
