@@ -11,7 +11,7 @@ const {
     addReaction,
     deleteReaction
 
-} = require('../../controllers/thoughts-controller');
+} = require('../../controllers/thought-controller');
 
 router.route('/').get(getAllThoughts);
 router.route('/:id').get(getThoughtsById).put(updateThoughts).delete(deleteThoughts); 
