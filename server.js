@@ -11,7 +11,11 @@ app.use(express.static('public'));
 app.use(require('./routes'));
 
 // Connect mongoose
-mongoose.connect('mongodb://localhost:3001');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/social-network-api', {
+  useFindAndModify: false,
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
 
 mongoose.set('debug', true);
 
