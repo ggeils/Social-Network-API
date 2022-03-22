@@ -16,6 +16,7 @@
     "express": "^4.17.3",
     "find-config": "^1.0.0",
     "moment": "^2.29.1",
-    "mongoose": "^6.2.3"
+    "mongoose": "^6.2.3",
+    "nodemon": "^2.0.4"
   }
 }

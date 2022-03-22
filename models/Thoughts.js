@@ -5,7 +5,6 @@ const moment = require("moment");
 // Reaction schema
 const ReactionsSchema = new Schema(
   {
-    // Set custom ID
     reactionId: {
       type: Schema.Types.ObjectId,
       default: () => new Types.ObjectId(),
@@ -34,7 +33,7 @@ const ReactionsSchema = new Schema(
   }
 );
 
-// Thought shcema
+// Thought schema
 const ThoughtsSchema = new Schema(
   {
     thoughtText: {
